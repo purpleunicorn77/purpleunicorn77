@@ -23,16 +23,17 @@
       margin-right: auto;
     }
 
-    /* Center content with flexbox */
+    /* Adjusted CSS to display images in a row */
     .row {
       display: flex;
-      justify-content: center; /* Center horizontally */
-      flex-wrap: wrap; /* Allow items to wrap */
+      justify-content: flex-start; /* Align images to the start */
+      align-items: flex-start; /* Align items at the top */
+      flex-wrap: nowrap; /* Prevent wrapping */
     }
 
     .column {
       flex: 0 0 auto; /* Adjust columns size and prevent stretching */
-      max-width: 50%; /* Ensure responsiveness */
+      max-width: none; /* Remove max-width restriction */
       padding: 8px; /* Add padding around columns */
     }
 
@@ -91,25 +92,24 @@
   </div>
 
   <!-- Portfolio Gallery Grid -->
-  <div class="content">
-    <a href="https://drive.google.com/file/d/1oxcocqd8Z_NRWPmRMjPg91JwtlWGFKGo/view?usp=drivesdk">
+<div class="row">
+   <div class="column">
+      <div class="content">
+        <a href="https://drive.google.com/file/d/1oxcocqd8Z_NRWPmRMjPg91JwtlWGFKGo/view?usp=drivesdk">
       <img src="./assets/images/01.jpg" class="center-image" alt="2D Icon" style="width:450px;height:450px;">
     </a>
     <h3>Ordinary People Book (2021)</h3>
     <p>Created during Covid19 by Adobe Illustrator, InDesign, and Procreate.</p>
   </div>
-
-<br>
-  <div class="row">
+        
     <div class="column">
       <div class="content">
         <img src="./assets/images/ios_thumbnail-01.png" class="img-responsive center-image" alt="2D Icon" style="width:316px;height:450px;">
         <h3>Beeta (2023)</h3>
         <p>Inspired by our cute nephew, created by Adobe Illustrator.</p>
-      </div>
     </div>
 
-<br>
+
     <div class="column">
       <div class="content">
         <img src="./assets/images/capitalism.png" class="img-responsive center-image" alt="2D Icon" style="width:480px;height:320px;">
