@@ -28,8 +28,8 @@
     }
 
     .temple-image {
-      width: 100%; /* Adjust width to fit as needed */
-      height: auto; /* Maintains the aspect ratio */
+      width: 450px; /* Matches the width of the poster-01 image */
+      height: 500px; /* Matches the height of the poster-01 image */
       position: relative; /* Positioning the temple image as the base layer */
       z-index: 1; /* Ensures temple image is below the monk image */
     }
@@ -38,8 +38,9 @@
       width: 150px; /* Adjusted width to make the monk image smaller */
       height: auto; /* Maintains the aspect ratio */
       position: absolute; /* Allows overlapping on the temple image */
-      top: 0; /* Aligns the monk image to the top of the temple image */
-      left: 0; /* Aligns the monk image to the left of the temple image */
+      top: 50%; /* Aligns the monk image to the vertical center of the temple image */
+      left: 50%; /* Aligns the monk image to the horizontal center of the temple image */
+      transform: translate(-50%, -50%); /* Centers the monk image both horizontally and vertically */
       z-index: 2; /* Ensures monk image is above the temple image */
     }
   </style>
