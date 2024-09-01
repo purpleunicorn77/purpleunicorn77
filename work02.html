@@ -11,39 +11,37 @@
 
   <title>purpleunicorn_77</title>
 
-  <!-- Favicon-->
+  <!-- Favicon -->
   <link href="./assets/images/f.png" rel="icon">
   <link href="./main.3f6952e4.css" rel="stylesheet">
-  
+
   <!-- CSS Styling for overlapping images -->
   <style>
     .content {
-      position: relative; /* Relative positioning for the content container */
+      position: relative;
       margin-bottom: 20px; /* Add some spacing between content blocks */
     }
 
     .image-container {
-      position: relative; /* Relative positioning to enable absolute positioning of child elements */
+      position: relative; /* Enables absolute positioning for child elements */
       display: inline-block; /* Ensures that the image container shrinks to the size of its contents */
     }
+
     .temple-image {
-      position: relative; /* Allows overlapping on the monk image */
-      width: 450px
-      height: 500px
-      z-index: 1; /* Ensures temple image is above the monk image */
-    }
-    
-    .monk-image {
-      width: 50px; /* Adjusted width to make the monk image smaller */
+      width: 100%; /* Adjust width to fit as needed */
       height: auto; /* Maintains the aspect ratio */
-      position: absolute; /* Keeps the monk image as the base */
-      z-index: 2; /* Ensures monk image is below the temple image */
-      top: 0;
-      left: 0;
+      position: relative; /* Positioning the temple image as the base layer */
+      z-index: 1; /* Ensures temple image is below the monk image */
     }
 
-    
-    
+    .monk-image {
+      width: 150px; /* Adjusted width to make the monk image smaller */
+      height: auto; /* Maintains the aspect ratio */
+      position: absolute; /* Allows overlapping on the temple image */
+      top: 0; /* Aligns the monk image to the top of the temple image */
+      left: 0; /* Aligns the monk image to the left of the temple image */
+      z-index: 2; /* Ensures monk image is above the temple image */
+    }
   </style>
 </head>
 
@@ -106,8 +104,8 @@
       <!-- Content Block 2 -->
       <div class="content">
         <a href="https://purpleunicorn77.github.io/temple/index.html" class="image-container">
+          <img src="./assets/images/interactive temple.png" class="temple-image">
           <img src="./assets/images/monk.png" class="center monk-image" alt="2D Icon">
-          <img src="./assets/images/interactive temple.png" class="temple-image" alt="2D Icon">
         </a>
         <h3>Final Major Project, Temple in Taiwan (2024)</h3>
       </div>
