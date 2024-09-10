@@ -3,6 +3,28 @@
 
 <head>
     <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;    /* Allow vertical stacking */
+      justify-content: center;   /* Vertically center */
+      align-items: center;       /* Horizontally center */
+      text-align: center;        /* Center text in the container */
+    }
+
+    /* Style for the title and description */
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 18px;
+      margin-bottom: 40px;  /* Space between description and images */
+    }
+
     /* Container to hold the row of images */
     .image-row {
       display: flex;             /* Use flexbox for a row layout */
@@ -20,6 +42,8 @@
 </head>
 
 <body>
+<div class="title">Taiwanese Tradition Festivals</div>
+<div class="description">There are many important festivals throughout the year in Taiwan. These festivals mainly focus on family reunions and the worship of ancestors and ghosts (好兄弟). The most distinctive thing is that each festival has specific must-eat dishes, allowing everyone to enjoy the food and experience the festival's beauty with family and friends.</div>
 
   <div class="image-row">
     <img src="./assets/images/f1.png" alt="new year">
