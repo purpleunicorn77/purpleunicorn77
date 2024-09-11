@@ -13,15 +13,7 @@
   <!-- Favicon-->
   <link href="./assets/images/f.png" rel="icon">
   <link href="./main.3f6952e4.css" rel="stylesheet">
-</head>
-
-<body class="">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
   <!-- Add your content of header -->
-  
   <header>
     <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
@@ -45,60 +37,45 @@
     </nav>
   </header>
 
-<head>
-    <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;     /* Stack the content vertically */
-      justify-content: flex-start; /* Start content near the top */
-      align-items: center;        /* Horizontally center everything */
-      text-align: center; }
-        
-
-    /* Style for the title and description */
-    .title {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 10px;
+  <style>
+    /* Ensure content starts below the fixed navbar */
+    body {
+      padding-top: 70px; /* Adjust this value based on the height of the navbar */
     }
 
-    .description {
-      font-size: 18px;
-      margin-bottom: 40px;  /* Space between description and images */
+    h2 {
+      font-size: 40px;
+      word-break: break-all;
+      margin-top: 40px;
     }
 
-    /* Container to hold the row of images */
-    .image-row {
-      display: flex;             /* Use flexbox for a row layout */
-      justify-content: center;   /* Center the images horizontally */
-      max-width: 1920px;         /* Limit the total width to 1920px */
-      margin: 0 auto;            /* Center the entire row in the body */
-    }
-
-    .image-row img {
-      width: 250px;              /* Scale down images to fit 5 in a row */
-      height: 250px;             /* Maintain square aspect ratio */
-      margin: 0 5px;             /* Add small spacing between images */
+    .responsive {
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
 
 <body>
-<div class="title">Taiwanese Tradition Festivals</div>
-<div class="description"><p>There are many important festivals throughout the year in Taiwan. These festivals mainly focus on family reunions and the worship of ancestors and ghosts (好兄弟).</p> 
-<p>The most distinctive thing is that each festival has specific must-eat dishes, allowing everyone to enjoy the food and experience the festival's beauty with family and friends.</p></div>
 
-  <div class="image-row">
-    <img src="./assets/images/f1.png" alt="new year">
-    <img src="./assets/images/f2.png" alt="lantern">
-    <img src="./assets/images/f3.png" alt="dragon">
-    <img src="./assets/images/f4.png" alt="ghost">
-    <img src="./assets/images/f5.png" alt="moon">
-  </div>
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
 
- <footer class="footer-container text-center">
+
+
+  <!-- Main Content -->
+  <h2>Taiwanese Traditional Festivals</h2>
+
+  <p>In Taiwan, traditional festivals are a key part of the culture and heritage.</p>
+
+  <img src="./assets/images/festival.png" alt="Taiwanese Festivals" class="responsive" width="600" height="400">
+  <br><br>
+  <p>These festivals include Lunar New Year, Dragon Boat Festival, Mid-Autumn Festival, and many more.</p>
+  
+  <!-- Footer -->
+  <footer class="footer-container text-center">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
