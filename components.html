@@ -76,11 +76,24 @@ div.desc {
   box-sizing: border-box;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping if the screen is small */
+  justify-content: space-between; /* Distributes space between items */
+  padding: 10px; /* Optional: adds some padding around the container */
+}
+
 .responsive {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
+
+.responsive_img {
+  flex: 1 1 15%; /* Adjust the base size to fit 6 images in one row */
+  margin: 5px; /* Optional: adds some spacing between images */
+}
+
 
 @media only screen and (max-width: 700px) {
   .responsive {
@@ -148,49 +161,53 @@ div.desc {
   <p> The goal of the interface design is to facilitate the users to understand more about Taiwanese temple culture.</p>
 </div>
 
-<div class="responsive">
+<br>
+<h3>Interactive Story of Mazu (iPhone 13/14/15)</h3>
+
+<div class="flex-container">
+<div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m1.png" alt="homepage" width="150" height="350">
+      <img src="./assets/images/m1.png" alt="homepage" class="small-img">
     </a>
     <div class="desc">Welcome to the Mazu story homepage. Click to enter.</div>
   </div>
 </div>
 
-  <div class="responsive">
+  <div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m2.png" alt="preface" width="150" height="350">
+      <img src="./assets/images/m2.png" alt="preface" class="small-img">
     </a>
     <div class="desc">Learn about Mazu's background story. Click to enter Chapter 1.</div>
   </div>
 </div>
 
-  <div class="responsive">
+  <div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m3.png" alt="chapter1" width="150" height="350">
+      <img src="./assets/images/m3.png" alt="chapter1" class="small-img">
     </a>
     <div class="desc">It was developed using p5.js, allowing users to freely move the mouse to control and subdue the monsters as if they were the characters in the game.</div>
   </div>
 </div>
 
-  <div class="responsive">
+  <div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m4.png" alt="chapter 2" width="150" height="350">
+      <img src="./assets/images/m4.png" alt="chapter 2" class="small-img">
     </a>
     <div class="desc">Utilizing variables in p5.js to create animated sketches.</div>
   </div>
 </div>
 
-  <div class="responsive">
+  <div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m5.png" alt="chapter 3" width="150" height="350">
+      <img src="./assets/images/m5.png" alt="chapter 3" class="small-img">
     </a>
     <div class="desc">The stars were created using JavaScript objects and arrays, built with vertices. This interactive feature showcases Mazu's magic, allowing users to engage with it.</div>
   </div>
 </div>
 
-  <div class="responsive">
+  <div class="responsive_img">
   <div class="gallery">
-      <img src="./assets/images/m6.png" alt="chapter 4" width="150" height="350">
+      <img src="./assets/images/m6.png" alt="chapter 4" class="small-img">
     </a>
     <div class="desc">Users can move the mouse over the temple image to trigger various sounds through the oscillator, offering a unique experience. This interaction highlights the distinct temple culture of Taiwan, particularly the Mazu Pilgrimage, providing newcomers with a memorable introduction to this tradition.</div>
   </div>
