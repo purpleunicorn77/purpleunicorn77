@@ -67,11 +67,20 @@
 <!-- Portfolio Gallery Grid -->
 <head>
 <style>
+.gallery-container {
+  display: flex;
+  justify-content: center; /* Centers the row horizontally */
+  gap: 20px; /* Space between the images */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  margin-top: 20px;
+}
+
+/* Individual gallery styles */
 div.gallery {
-  margin: 5px;
   border: 1px solid #ccc;
-  float: left;
-  width: 180px;
+  width: 250px; /* Fixed width */
+  height: auto;
+  margin: 10px;
 }
 
 div.gallery:hover {
@@ -79,18 +88,42 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: 250px; /* Fixed width */
+  height: 400px; /* Fixed height */
+  display: block;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
 }
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 900px) {
+  div.gallery {
+    width: 45%; /* 2 images per row on medium screens */
+  }
+
+  div.gallery img {
+    width: 100%; /* Make image width responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  div.gallery {
+    width: 100%; /* 1 image per row on small screens */
+  }
+
+  div.gallery img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
 </style>
 </head>
 <body>
-  <div class="gallery-row">
+  <div class="gallery-container">
   <div class="gallery">
     <a target="Beeta" href="beeta.html">
       <img src="./assets/images/ios_thumbnail-01.png" alt="Beeta" width="250" height="400">
