@@ -67,20 +67,8 @@
 <!-- Portfolio Gallery Grid -->
 <head>
 <style>
-.gallery-container {
-  display: flex;
-  justify-content: center; /* Centers the row horizontally */
-  gap: 20px; /* Space between the images */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
-  margin-top: 20px;
-}
-
-/* Individual gallery styles */
 div.gallery {
   border: 1px solid #ccc;
-  width: 250px; /* Fixed width */
-  height: auto;
-  margin: 10px;
 }
 
 div.gallery:hover {
@@ -88,9 +76,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 250px; /* Fixed width */
-  height: 400px; /* Fixed height */
-  display: block;
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
@@ -98,32 +85,38 @@ div.desc {
   text-align: center;
 }
 
-/* Responsive adjustments for smaller screens */
-@media only screen and (max-width: 900px) {
-  div.gallery {
-    width: 45%; /* 2 images per row on medium screens */
-  }
+* {
+  box-sizing: border-box;
+}
 
-  div.gallery img {
-    width: 100%; /* Make image width responsive */
-    height: auto; /* Maintain aspect ratio */
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  div.gallery {
-    width: 100%; /* 1 image per row on small screens */
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
+}
 
-  div.gallery img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-  }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
-  <div class="gallery-container">
+  <div class="responsive">
   <div class="gallery">
     <a target="Beeta" href="beeta.html">
       <img src="./assets/images/ios_thumbnail-01.png" alt="Beeta" width="250" height="400">
@@ -131,7 +124,7 @@ div.desc {
     <div class="desc">Beeta (2023)</div>
   </div>
 </div>
-
+  <div class="responsive">
   <div class="gallery">
     <a target="trasko" href="trasko.html">
       <img src="./assets/images/trasko-1.png" alt="trasko" width="250" height="400">
@@ -139,7 +132,7 @@ div.desc {
     <div class="desc">Träskö (2024)</div>
   </div>
 </div>
-
+   <div class="responsive"
   <div class="gallery">
       <img src="./assets/images/Halloween.png" alt="book" width="250" height="400">
     </a>
