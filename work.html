@@ -67,56 +67,45 @@
 <!-- Portfolio Gallery Grid -->
 <head>
 <style>
-div.gallery {
-  border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
+  .gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Optional: adds space between the images */
+    flex-wrap: wrap; /* Makes the images wrap if the screen size is smaller */
   }
-}
 
-@media only screen and (max-width: 500px) {
-  .responsive {
+  .gallery {
+    border: 1px solid #ccc;
+    width: 250px; /* Ensure consistent width for all images */
+  }
+
+  .gallery img {
     width: 100%;
+    height: auto;
   }
-}
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Responsive adjustments for smaller screens */
+  @media only screen and (max-width: 700px) {
+    .gallery {
+      width: 48%; /* Adjust to 2 images per row */
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .gallery {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
 </style>
 </head>
 <body>
-<div class="responsive">
+  <div class="gallery-row">
   <div class="gallery">
     <a target="Beeta" href="beeta.html">
       <img src="./assets/images/ios_thumbnail-01.png" alt="Beeta" width="250" height="400">
@@ -125,7 +114,6 @@ div.desc {
   </div>
 </div>
 
-<div class="responsive">
   <div class="gallery">
     <a target="trasko" href="trasko.html">
       <img src="./assets/images/trasko-1.png" alt="trasko" width="250" height="400">
@@ -134,7 +122,6 @@ div.desc {
   </div>
 </div>
 
-<div class="responsive">
   <div class="gallery">
       <img src="./assets/images/Halloween.png" alt="book" width="250" height="400">
     </a>
