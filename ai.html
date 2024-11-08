@@ -43,24 +43,21 @@
       </div>
     </nav>
   </header>
-
 <style>
-    /* Set up the full-height layout */
+    /* Reset body and html margins */
     body, html {
         margin: 0;
         padding: 0;
         height: 100%;
-        display: flex;
     }
 
-    /* Main container */
+    /* Main container for fixed and scrolling sections */
     .container {
         display: flex;
-        width: 100%;
         height: 100vh;
     }
 
-    /* Fixed (non-scrolling) sidebar */
+    /* Left fixed sidebar */
     .fixed-side {
         width: 30%;
         background-color: #333;
@@ -68,17 +65,17 @@
         padding: 20px;
         position: sticky;
         top: 0;
-        height: 100vh;
-        overflow-y: auto;
+        overflow-y: auto;  /* Allows the sidebar to scroll if its content exceeds the viewport */
+        height: 100vh;  /* Full viewport height */
     }
 
-    /* Scrollable content area */
+    /* Right scrollable content area */
     .scrolling-side {
         width: 70%;
         padding: 20px;
-        overflow-y: scroll;
-        height: 100vh;
+        overflow-y: auto;  /* Enables scrolling on this side */
         background-color: #f4f4f4;
+        height: 100vh;  /* Full viewport height */
     }
 
     /* Styling for images */
@@ -88,6 +85,18 @@
         margin-bottom: 20px;
     }
 </style>
+</head>
+
+<body>
+
+<div class="container">
+    <!-- Left side (Fixed) -->
+    <div class="fixed-side">
+        <h2>Infographic</h2>
+        <p>What is scrying mirror?</p>
+        <!-- Add more fixed content if desired -->
+    </div>
+
 </head>
 <body>
 
