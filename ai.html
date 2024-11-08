@@ -17,17 +17,26 @@
   <style>
     /* Reset body and html margins */
     body, html {
-        margin: 0;
-        padding: 0;
         height: 100%;
         overflow: hidden; /* Prevent the page itself from scrolling */
     }
 
     /* Main container for fixed and scrolling sections */
-    .container {
+    .page-container {
         display: flex;
         height: 100vh;
         overflow: hidden; /* Prevents outer page scrolling */
+    }
+
+    .menu-bar {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content-container {
+      display: flex;
+      height: 100px;
     }
 
     /* Left fixed sidebar */
@@ -35,10 +44,9 @@
         width: 50%;
         background-color: white;
         padding: 20px;
-        position: sticky;
-        top: 10%; /* Keeps the sidebar fixed */
         overflow-y: auto;  /* Allows scrolling within the sidebar */
         height: 100vh;
+        padding-top: 60px;
     }
 
     /* Right scrollable content area */
@@ -103,23 +111,5 @@
         <img src="./assets/images/Typography-07.png" alt="7">
     </div>
   </div>
-
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© Tiffany Hsu | <a href="https://www.instagram.com/purpleunicorn_77/" title="PurpleUnicorn77">PurpleUnicorn77</a></p>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
-
-<script type="text/javascript" src="./about_files/main.70a66962.js"></script>
 </body>
 </html>
