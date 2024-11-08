@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrolling & Fixed Sides</title>
+<style>
+    /* Set up the full-height layout */
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+    }
+
+    /* Main container */
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Fixed (non-scrolling) sidebar */
+    .fixed-side {
+        width: 30%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    /* Scrollable content area */
+    .scrolling-side {
+        width: 70%;
+        padding: 20px;
+        overflow-y: scroll;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+
+    /* Styling for images */
+    .scrolling-side img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Left side (Fixed) -->
+    <div class="fixed-side">
+        <h2>Fixed Sidebar</h2>
+        <p>This side stays fixed while the other side scrolls.</p>
+        <!-- Add additional fixed content here -->
+    </div>
+
+    <!-- Right side (Scrolling) -->
+    <div class="scrolling-side">
+        <h2>Scrolling Content</h2>
+        <!-- Add images or other content that needs to scroll -->
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 1">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 2">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 3">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 4">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 5">
+        <img src="https://via.placeholder.com/600x400" alt="Placeholder Image 6">
+    </div>
+</div>
+
+</body>
+</html>
