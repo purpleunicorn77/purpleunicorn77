@@ -68,61 +68,21 @@ body {
 background-color: white;
 }
 
-div.gallery {
-  border: none;
-}
-
-div.gallery img {
-  width: 200px; /* Image takes the full width of the container */
-  height: auto; /* Keeps the image aspect ratio */
-  max-height: 380px; /* Sets a max height for consistency */
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.flex-container {
+.centered-container {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if the screen is small */
-  justify-content: space-between; /* Distributes space between items */
-  padding: 10px; /* Optional: adds some padding around the container */
+  justify-content: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  height: 100vh; /* Makes the container take up the full viewport height */
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
+.image-container {
+  display: flex;
+  gap: 20px; /* Adds space between the images */
 }
 
-.responsive_img {
-  flex: 1 1 23%; /* Adjust the base size to fit 6 images in one row */
-  margin: 5px; /* Optional: adds some spacing between images */
-}
-
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.image-container img {
+  width: 200px; /* Adjust width as needed */
+  height: auto; /* Maintains aspect ratio */
 }
 
 footer.footer-container {
@@ -136,23 +96,20 @@ footer.footer-container {
 </head>
 
 <body>
-<br>
-<div class="flex-container">
- <div class="responsive_img">
-  <div class="gallery">
-    <a href="https://purpleunicorn77.github.io/stargazing/#page-top" target="_blank">
-      <img src="./assets/images/p0-1.png" alt="Stargazing" class="small-img">
-    </a>
-    <div class="desc">STARGAZING (2024)</div>
-  </div>
-</div>
-<div class="flex-container">
- <div class="responsive_img">
-  <div class="gallery">
-    <a href="https://purpleunicorn77.github.io/zooacademy/" target="_blank">
-      <img src="./assets/images/K1.png" alt="ZOO" class="small-img">
-    </a>
-    <div class="desc">ZOO ACADEMY(2024)</div>
+<div class="centered-container">
+  <div class="image-container">
+    <div class="gallery">
+      <a href="https://purpleunicorn77.github.io/stargazing/#page-top" target="_blank">
+        <img src="./assets/images/p0-1.png" alt="Stargazing">
+      </a>
+      <div class="desc">STARGAZING (2024)</div>
+    </div>
+    <div class="gallery">
+      <a href="https://purpleunicorn77.github.io/zooacademy/" target="_blank">
+        <img src="./assets/images/K1.png" alt="Zoo">
+      </a>
+      <div class="desc">ZOO ACADEMY (2024)</div>
+    </div>
   </div>
 </div>
 
