@@ -3940,15 +3940,24 @@ body {
       margin-bottom: 40px; } }
 
 .section-container {
+    padding-top: 100px; /* Top padding */
+    padding-bottom: 50px; /* Bottom padding */
+    padding-left: 0; /* Left padding, adjust if needed */
+    padding-right: 0; /* Right padding, adjust if needed */
+}
+
+.section-container {
   padding: 50px 0; }
   @media (min-width: 200px) {
     .section-container {
-      padding: 50px 0; } }
+      padding-top: 50px 0; } }
   .section-container.only-container {
     min-height: 84vh; }
   @media (max-width: 768px) {
     .section-container:nth-of-type(1) {
-      padding-top: 30px; } }
+      padding-top: 50px;
+      padding-bottom: 30px
+ } }
 
 .background-image-container {
   background-size: cover;
