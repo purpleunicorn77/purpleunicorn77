@@ -3943,7 +3943,7 @@ body {
   padding: 100px 0; }
   @media (min-width: 200px) {
     .section-container {
-      padding: 100px 0; } }
+      padding: 50px 0; } }
   .section-container.only-container {
     min-height: 84vh; }
   @media (max-width: 768px) {
