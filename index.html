@@ -77,24 +77,6 @@
   margin: 60px auto 20px; 
 }
 
-.video-container {
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-}
-
-.video-heading {
-  position: absolute;
-  top: 10%; /* adjust as needed */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 2em;
-  z-index: 2;
-  text-shadow: 2px 2px 5px black; /* optional for better contrast */
-}
-
 .video-background {
   position: fixed;
   top: 0;
@@ -115,6 +97,29 @@
   height: auto;
   transform: translate(-50%, -50%);
   object-fit: cover;
+}
+
+.hero-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+  max-width: 90%;
+}
+
+.hero-center h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-center p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 
@@ -167,9 +172,7 @@
   <div class="video-container">
   <h2 class="video-heading">Tiffany Hsu</h2>
 <br>
-  <video autoplay loop muted playsinline class="img-responsive small-img">
-    <source src="./assets/images/description-1.mp4" type="video/mp4">
-  </video>
+<p>I am a multidisciplinary designer passionate about branding, UI and storytelling through Visual.</p>
 </div>
       
       <div class="col-md-12">
