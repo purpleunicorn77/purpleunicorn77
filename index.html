@@ -76,6 +76,25 @@
   display: block;
   margin: 60px auto 20px; 
 }
+
+.video-container {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.video-heading {
+  position: absolute;
+  top: 10%; /* adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2em;
+  z-index: 2;
+  text-shadow: 2px 2px 5px black; /* optional for better contrast */
+}
+
   </style>
 </head>
 
@@ -115,11 +134,13 @@
         <div class="text-center"></div>
       </div>
 
-
-     <video autoplay loop muted playsinline class="img-responsive small-img">
-  <source src="./assets/images/description-1.mp4" type="video/mp4">
-</video>
-
+  <div class="video-container">
+  <h2 class="video-heading">Tiffany Hsu</h2>
+  <video autoplay loop muted playsinline class="img-responsive small-img">
+    <source src="./assets/images/description-1.mp4" type="video/mp4">
+  </video>
+</div>
+      
       <div class="col-md-12">
         <div id="myCarousel" class="carousel slide projects-carousel">
           <!-- Carousel items -->
