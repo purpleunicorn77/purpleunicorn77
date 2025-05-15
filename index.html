@@ -99,26 +99,28 @@
   object-fit: cover;
 }
 
-.hero-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.hero-section {
+  height: 100vh; /* fills the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   color: white;
-  z-index: 2;
-  max-width: 90%;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  background: transparent;
 }
 
-.hero-center h2 {
+.hero-section h2 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.hero-center p {
+.hero-section p {
   font-size: 1.2em;
   max-width: 700px;
-  margin: 0 auto;
   line-height: 1.6;
 }
 
@@ -169,7 +171,7 @@
         <div class="text-center"></div>
       </div>
 
- <div class="hero-center">
+ <div class="hero-section">
   <h2>Tiffany Hsu</h2>
 <br>
   <p>I am a multidisciplinary designer passionate about branding, UI, and storytelling through visuals.</p>
