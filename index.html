@@ -95,6 +95,29 @@
   text-shadow: 2px 2px 5px black; /* optional for better contrast */
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Pushes video to the background */
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+
   </style>
 </head>
 
@@ -126,6 +149,13 @@
       </div>
     </nav>
   </header>
+
+  <div class="video-background">
+  <video autoplay loop muted playsinline>
+    <source src="./assets/images/universe.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
   <!-- Main Content -->
   <div class="section-container">
